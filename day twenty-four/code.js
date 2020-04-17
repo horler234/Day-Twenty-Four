@@ -35,6 +35,12 @@ document.getElementById('start-countdown').addEventListener("click", function (e
       alert('Get Sense!');
     }
 
+    document.getElementById('start-countdown').style.display = 'none';
+    document.getElementById('date').style.display = 'none';
+    document.getElementById('time').style.display = 'none';
+    document.getElementById('words').innerHTML = 'COUNTDOWN TO ' + dateTime;
+    document.getElementById('words').style.margin = '40px';
+
 // the 1000 means for a second
   }, 1000);
 });
